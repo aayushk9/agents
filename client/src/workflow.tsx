@@ -1,5 +1,7 @@
+// pages/Workflow.jsx (or your main workflow route)
 import ReactFlow, { ReactFlowProvider } from 'reactflow';
 import 'reactflow/dist/style.css';
+import { nodeTypes } from './types/nodeTypes';
 
 const initialNodes = [
   {
@@ -27,7 +29,7 @@ export default function Workflow() {
         <ReactFlow
           nodes={initialNodes}
           edges={initialEdges}
-         // nodeTypes={nodeTypes}
+          nodeTypes={nodeTypes}
           fitView
         />
       </div>
